@@ -1,0 +1,88 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Image Store CRUD",
+    "description": "Image Store Application API",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:3001",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Images",
+      "description": "API for images in the system"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/image": {
+      "get": {
+        "tags": [
+          "Images"
+        ],
+        "summary": "Get images by query params",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Images"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Image": {
+      "required": [
+        "key",
+        "_id",
+        "logs",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "_id": {
+          "type": "string",
+          "uniqueItems": true
+        },
+        "key": {
+          "type": "string"
+        },
+        "logs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "logType": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Images": {
+      "type": "array",
+      "$ref": "#/definitions/Image"
+    }
+  }
+}

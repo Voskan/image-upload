@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "Recipe_Backend",
+      "script": "./bin/www",
+      "exec_mode": "cluster"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+.ErrorIndicator {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  text-align: center;
+}
+.ErrorIndicator h2 {
+  font-size: 35px;
+  margin-top: 10px;
+  display: block;
+  color: brown;
+  font-weight: bold;
+}
+.ErrorIndicator p {
+  font-size: 16px;
+  color: rgb(48, 21, 21);
+}

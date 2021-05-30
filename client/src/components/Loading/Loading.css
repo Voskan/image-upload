@@ -1,0 +1,25 @@
+.main-spinner {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.main-spinner .main-spinner-box {
+  margin: 150px auto 0 auto;
+  width: 100px;
+  text-align: center;
+}
+.main-spinner .main-spinner-logo {
+  display: block;
+  position: relative;
+  z-index: 999;
+  width: 50px;
+  margin: 0 auto;
+}
+.main-spinner .main-spinner-spin {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  position: relative;
+  top: -40px;
+  z-index: 1;
+}

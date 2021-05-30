@@ -1,0 +1,8 @@
+{
+  "MAIN": {
+    "LOG_LEVEL": "dev",
+    "PORT": 3001,
+    "SERVER_URL": "http://13.58.42.233:3001",
+    "CLIENT_URL": "http://13.58.42.233:5000"
+  }
+}
